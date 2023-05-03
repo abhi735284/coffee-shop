@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <div class="header">
+    <img src="coffee.jpg" Logo>
+    <h1> Coffee Shop</h1>
+  </div>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="home.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="menu-btn"> </div>
+    <header>
+      <h1>The Best Coffee Shop</h1>
+    </header>
+    <main>
+      <section id="about">
+        <h2>About Us</h2>
+        <p>We are a small coffee shop dedicated to serving the best coffee in town. Our beans are sourced from the
+          finest farms around the world, and our baristas are trained to make the perfect cup every time. As long as
+          there
+          was coffee in the world,how bad could things be?
+        </p>
+        <p><b>Behind every successful person is a substantial amount of coffee.</b></p>
+      </section>
+      <section id="menu">
+
+        <p> <b>Choose your favorite coffee from our menu:</b></p>
+
+        <div id="coffee">
+          <div class="alert alert-success d-none" role="alert" >
+            Your order has been placed successfully! Total price: <span id="total-price"></span>
+          </div>
+          
+          <div class="toast d-none" id="order-alert" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <img src="..." class="rounded me-2" alt="...">
+              <strong class="me-auto">Bootstrap</strong>
+              <small>11 mins ago</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              Hello, world! This is a toast message.
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="espresso.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Espresso</h5>
+              <input type="checkbox" name="menu[]">
+              <input type="number" value="399">
+              <p class="card-text">A single shot of espresso.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="Latte.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Latte</h5>
+              <input type="checkbox" name="menu[]">
+              <input type="number" value="70">
+              <p class="card-text">Latte with steamed milk and a small layer of foam</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="Cappuccino.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cappuccino</h5>
+              <input type="checkbox" name="menu[]">
+              <input type="number" value="230">
+              <p class="card-text">Cappuccino with equal parts steamed milk and foam</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="Affogato.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Affogato</h5>
+              <input type="checkbox" name="menu[]">
+              <input type="number" value="290">
+              <p class="card-text">A single shot of Affogato</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="Mocha.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mocha</h5>
+              <input type="checkbox" name="menu[]">
+              <input type="number" value="215">
+              <p class="card-text">Mocha with steamed milk and a small layer of foam</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="Frappe.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Frappe</h5>
+              <input type="checkbox" name="menu[]">
+              <input type="number" value="250">
+              <p class="card-text">A single shot of creamy Frappe</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="Flat White.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Flat White</h5>
+              <input type="checkbox" name="menu[]">
+              <input type="number" value="350">
+              <p class="card-text">A single shot of Flat White</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="Americano.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Americano</h5>
+              <input type="checkbox" name="menu[]">
+              <input type="number" value="400">
+              <p class="card-text">Americano with steamed milk and a small layer of foam</p>
+            </div>
+          </div>
+        </div>
+        <pr>
+          <button class="btn btn-success" id="order-btn">Order</button> <input type="totalPrice" id="totalPrice" name="totalPrice" > </label>
+        </pr>
+
+
+    </section>
+        <section id="contact">
+          <h2>Contact Us</h2>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message"> Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 The Best Coffee Shop</p>
+    </footer>
+    <script src="home.js">
+    </script>
+</body>
+
+</html>
